@@ -2,7 +2,7 @@ import type { Character } from "@/interfaces/character";
 import { useState, useEffect } from "react";
 import { useCharacters } from "../../components/Character/CharacterCard/useCharacters";
 import { useDebounce } from "./useDebounce";
-import { PAGE_SIZE } from "@/components/contants/contants";
+import { PAGE_SIZE } from "@/contants/contants";
 
 export const useHomePage = () => {
 
