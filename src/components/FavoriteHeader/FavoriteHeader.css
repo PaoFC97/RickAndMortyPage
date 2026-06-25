@@ -1,0 +1,31 @@
+.containerFavorite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 154px;
+    height: 40px;
+}
+
+.titleFavorite {
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+.buttonFavorite {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-success);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: var(--font-size-md);
+    }
+
+.buttonFavorite:hover {
+    opacity: 0.9;
+}
