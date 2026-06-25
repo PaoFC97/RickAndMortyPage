@@ -1,0 +1,53 @@
+@import './variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+html,
+body,
+#root {
+    min-height: 100vh;
+}
+
+body {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    margin-left: 136px;
+    margin-right: 146px;
+
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+input {
+    font-family: inherit;
+}
+
+.title {
+    color: var(--color-black);
+    font-size: var(--font-size-xxl);
+    font-weight: bolder;
+    text-shadow: var(--shadow-md);
+}
+
+.subtitle {
+    color: var(--color-black);
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.topMd{
+    margin-top: var(--spacing-md);
+}
