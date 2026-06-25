@@ -11,14 +11,13 @@ export const HomePage = () => {
     const {
         loading,
         error,
-        totalPages,
 
         search,
         currentPage,
 
         favorites,
         displayCharacters,
-        
+        pages,
         showFavorites,
         setShowFavorites,
 
@@ -66,7 +65,7 @@ export const HomePage = () => {
                 <div className="paginationContainer topMd">
                     <Pagination 
                         currentPage={currentPage}
-                        totalPages={totalPages}
+                        totalPages={pages}
                         onPageChange={setCurrentPage}
                     />
                 </div>

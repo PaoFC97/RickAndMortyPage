@@ -2,6 +2,7 @@ import type { Character } from "@/interfaces/character";
 import { useState, useEffect } from "react";
 import { useCharacters } from "../../components/Character/CharacterCard/useCharacters";
 import { useDebounce } from "./useDebounce";
+import { PAGE_SIZE } from "@/components/contants/contants";
 
 export const useHomePage = () => {
 
@@ -61,12 +62,17 @@ export const useHomePage = () => {
         );
     };
 
-    const displayCharacters = showFavorites ? favorites : characters;
+    const displayCharacters = showFavorites 
+        ? favorites.slice((currentPage-1) * PAGE_SIZE, currentPage * PAGE_SIZE ) 
+        : characters;
+    
+    const pages = showFavorites 
+        ? Math.ceil(favorites.length/PAGE_SIZE)
+        : totalPages;
 
     return {
         loading,
         error,
-        totalPages,
 
         search,
         currentPage,
@@ -74,6 +80,7 @@ export const useHomePage = () => {
         favorites,
         selectedCharacter,
         displayCharacters,
+        pages,
 
         showFavorites,
         setShowFavorites,
