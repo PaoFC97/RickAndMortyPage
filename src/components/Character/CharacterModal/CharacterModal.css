@@ -1,0 +1,92 @@
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 1000;
+}
+
+.modalContainer {
+    width: 347px;
+    max-width: 859px;
+
+    background: var(--color-white);
+
+    border-radius: var(--radius-lg);
+
+    padding: 16px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 16px;
+}
+
+.closeButton {
+    border: none;
+    background: #FFE1E1;
+    color: #C73A3A;
+    font-weight: 700;
+    padding: 5.5px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.modalImage {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.modalTitle {
+    margin-top: 16px;
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+}
+
+.tagsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.tag {
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: var(--font-size-xs);
+}
+
+.tagBlue {
+    background: #CCEFFF;
+}
+
+.tagPurple {
+    background: #CCD5FF;
+}
+
+.tagGreen {
+    background: #CCFFDA;
+}
+
+.tagYellow {
+    background: #F7F6CE;
+}
+
+.tagOrange {
+    background: #FAE9D2;
+}
