@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import type { UsePaginationProps } from "./Pagination.types"
-import { SIDE_PAGES, WINDOW_SIZE } from "../../contants/contants";
+import { SIDE_PAGES, WINDOW_SIZE } from "@/contants/contants";
 
 export const usePagination = ({
     currentPage,
